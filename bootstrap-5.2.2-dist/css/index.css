@@ -1,0 +1,289 @@
+:root {
+    --white: white;
+    --green: #CCDF2E;
+    --black: black;
+    --motion-ease: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    --motion-duration: 0.3s;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+/* start everything */
+.text_font {
+    font-family: 'Alkatra', cursive;
+}
+
+/* end everything */
+
+/* start navbar */
+.navbar_background {
+    background-color: #43484E;
+}
+
+.li_border {
+    border-right: 1px solid #aaa;
+}
+
+section .navbar .container .collapse ul li,
+section .navbar .container .collapse ul li a {
+    color: var(--white);
+}
+
+section .navbar .container .collapse ul li:hover,
+section .navbar .container .collapse ul li:hover a {
+    color: var(--green);
+}
+
+section .navbar .container .collapse div .icon {
+    border: 2px solid var(--white);
+    border-radius: 6px;
+    color: var(--white);
+}
+
+section .navbar .container .collapse div .icon:hover {
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+/* end navbar */
+
+/* start header */
+.image_header {
+    background-image: url("../../images/images\ header/ben-herndon-how-to-be-a-professional-photographer-1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+section nav .container div ul .circ1_none .circ1 {
+    height: 10vmin;
+    width: 10vmin;
+    background: #EE8BAE;
+    -webkit-animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+section nav .container div ul .circ1_none .circ2 {
+    margin-left: 50px;
+    margin-top: -80%;
+    height: 7vmin;
+    width: 7vmin;
+    border: solid 4.5vmin var(--green);
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+section .image_header .navbar .container .collapse div .a_icon {
+    text-decoration: none;
+}
+
+section .image_header .navbar .container .collapse div .a_icon .div_color:hover {
+    color: var(--green);
+}
+
+section .image_header .container_center {
+    height: 700px;
+}
+
+section .image_header .container_center div .button_header {
+    line-height: 1;
+}
+
+section .image_header .container_center div .button_header:hover {
+    filter: brightness(1.1);
+}
+
+section .image_header .container_center div .button_header:active {
+    filter: brightness(0.9);
+}
+
+section .image_header .container_center div .button_header>span {
+    transition: transform var(--motion-duration) var(--motion-ease);
+    z-index: 1;
+}
+
+section .image_header .container_center div .button_header:hover>span {
+    transform: scale(1.05);
+}
+
+section .image_header .container_center div .button_header:active>span {
+    transform: scale(0.95);
+}
+
+section .image_header .container_center div .button_header>svg {
+    fill: var(--green);
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+}
+
+section .image_header .container_center div .button_header>svg>path {
+    transition: var(--motion-duration) var(--motion-ease);
+}
+
+section .image_header .container_center div .button_header:hover>svg>path {
+    d: path("M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0");
+}
+
+section .image_header .container_center div .button_header:active>svg>path {
+    d: path("M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0");    
+}
+
+/* end header */
+/* start media */
+@media (max-width: 991px) and (min-width: 0px) {
+    .li_border {
+        border-right: 0px solid #aaa;
+    }
+
+    section nav .container div ul .circ1_none {
+        display: none;
+    }
+
+    .div_background {
+        background-color: var(--green);
+    }
+}
+
+/* end media */
