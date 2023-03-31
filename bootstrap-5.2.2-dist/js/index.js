@@ -3,7 +3,7 @@ let section = document.querySelector(".three");
 let started = false;
 
 window.onscroll = function () {
-    if (window.scrollY >= section.offsetTop - 580) {
+    if (window.scrollY >= section.offsetTop - 700) {
         if (!started) {
             nums.forEach((num) => startCount(num));
         }
@@ -19,4 +19,15 @@ function startCount(el) {
             clearInterval(count);
         }
     }, 10000 / goal);
+}
+
+var div_back = document.querySelectorAll(".div_back");
+for (let i = 0; i < div_back.length; i++) {
+    var chekd = div_back[i];
+    chekd.addEventListener("click", function () {
+        for (let i = 0; i < div_back.length; i++) {
+            div_back[i].classList.remove("actve");
+        }
+        this.classList.add("actve");
+    });
 }
