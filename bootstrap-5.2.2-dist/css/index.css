@@ -23,6 +23,10 @@ body {
     background-color: var(--green);
 }
 
+.section_background {
+    background-color: #eee;
+}
+
 /* end everything */
 
 /* start navbar */
@@ -284,10 +288,6 @@ section .image_header .container_center {
 
 /* end header */
 /* start portfolio */
-.section_background {
-    background-color: #eee;
-}
-
 .section_background .container .row div .card .image_portfolio {
     height: 250px;
 }
@@ -360,8 +360,8 @@ section .container .row div .row div figure .image_height {
 
 /* end about */
 /* start our */
-section .container .row .div_bottom {
-    height: 53px;
+section .container .row div div .div_bottom {
+    height: 44px;
     border-bottom: 4px solid var(--green);
 }
 
@@ -396,6 +396,12 @@ section .container .row div .margin_hover:hover {
 }
 
 /* end our */
+/* start professional */
+.section_padding {
+    padding: 50px;
+}
+
+/* end professional */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
     .li_border {
