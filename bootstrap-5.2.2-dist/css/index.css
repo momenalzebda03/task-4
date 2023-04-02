@@ -105,6 +105,15 @@ section .navbar .container .collapse div .icon:hover {
     d: path("M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0");
 }
 
+.margin_hover {
+    width: 240px;
+    transition: 0.3s;
+}
+
+.margin_hover:hover {
+    margin-left: 10px;
+}
+
 /* end navbar */
 
 /* start header */
@@ -386,13 +395,8 @@ section .container .row div div .navbar .row div .actve {
     background-color: var(--green);
 }
 
-section .container .row div .margin_hover {
-    width: 240px;
-    transition: 0.3s;
-}
-
-section .container .row div .margin_hover:hover {
-    margin-left: 10px;
+section .container .row div div .div_top {
+    margin-top: 40px;
 }
 
 /* end our */
@@ -402,6 +406,141 @@ section .container .row div .margin_hover:hover {
 }
 
 /* end professional */
+/* start weekly */
+section .container .row div .container .my_card {
+    height: 450px;
+    background: #232323;
+}
+
+section .container .row div .container .card_backgound1::before {
+    background: rgb(0, 110, 255) !important;
+}
+
+section .container .row div .container .card_backgound2::before {
+    background: #43484E !important;
+}
+
+section .container .row div .container .card_backgound2::before {
+    background: gold !important;
+}
+
+section .container .row div .container .card_backgound::before,
+section .container .row div .container .card_backgound1::before,
+section .container .row div .container .card_backgound2::before,
+section .container .row div .container .card_backgound3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--green);
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+section .container .row div .container .my_card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+section .container .row div .container .my_card:after {
+    content: 'Nike';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 25, 0.05)
+}
+
+section .container .row div .container .my_card .imgBx {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+section .container .row div .container .my_card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+
+}
+
+section .container .row div .container .my_card .imgBx img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+}
+
+section .container .row div .container .my_card .contentBx {
+    bottom: 0;
+    height: 100px;
+    transition: 1s;
+}
+
+section .container .row div .container .my_card:hover .contentBx {
+    height: 230px;
+}
+
+section .container .row div .container .my_card .contentBx .size {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+section .container .row div .container .my_card:hover .contentBx .size {
+    opacity: 1;
+}
+
+section .container .row div .container .my_card .contentBx .size .image_width {
+    width: 60px;
+}
+
+section .container .row div .container .my_card .contentBx div .icon_star {
+    color: var(--green);
+}
+
+/* end weekly */
+/* start before footer */
+section .container .row div .row div .icon_hover {
+    color: var(--white);
+    border: 2px solid #eee;
+}
+
+section .container .row div .row div .icon_hover:hover {
+    color: var(--green);
+    border: 2px solid var(--green);
+}
+
+section .container .row div .input_button {
+    border: 2px solid transparent;
+    background-color: var(--green);
+    transition: 0.3s;
+}
+
+section .container .row div .input_button:hover {
+    font-size: 20px;
+}
+
+/* end before footer */
+/* start footer */
+.section_footer {
+    background-color: #43484E;
+}
+
+.section_footer .container .row div .span_color {
+    color: var(--green);
+}
+
+section .container .row div div .a_links {
+    text-decoration: none;
+    color: var(--white);
+}
+
+section .container .row div div .a_links:hover {
+    color: var(--green);
+}
+
+/* end footer */
 /* start media */
 @media (max-width: 991px) and (min-width: 0px) {
     .li_border {
@@ -432,8 +571,12 @@ section .container .row div .margin_hover:hover {
         border-bottom: 0px solid var(--green);
     }
 
-    section .container .row .div_margin {
-        margin-top: 550px;
+    section .container .row div div .div_top {
+        margin-top: 170px;
+    }
+
+    .margin_hover {
+        width: 100%;
     }
 }
 
