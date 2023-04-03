@@ -27,6 +27,10 @@ body {
     background-color: #eee;
 }
 
+.span_color {
+    color: var(--green);
+}
+
 /* end everything */
 
 /* start navbar */
@@ -408,7 +412,7 @@ section .container .row div div .div_top {
 /* end professional */
 /* start weekly */
 section .container .row div .container .my_card {
-    height: 450px;
+    height: 400px;
     background: #232323;
 }
 
@@ -525,10 +529,6 @@ section .container .row div .input_button:hover {
 /* start footer */
 .section_footer {
     background-color: #43484E;
-}
-
-.section_footer .container .row div .span_color {
-    color: var(--green);
 }
 
 section .container .row div div .a_links {
